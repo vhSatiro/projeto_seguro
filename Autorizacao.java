@@ -15,6 +15,12 @@ public class Autorizacao {
     
     public Autorizacao(){};
     
+    //Utilização do padrão Grasp - Creator
+    public void CriaItem(int qtd){
+        this.item = new ItemProcedimento(qtd);
+    }
+    
+    
     public void setLocal(Local local){
         this.local = local;    
     }
